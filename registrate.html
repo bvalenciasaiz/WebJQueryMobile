@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+  <div data-role="main" class="ui-content">
+
+  
+    <div data-role="popup" id="registrate" class="ui-content">
+    	<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+
+    	<h5>REGISTRATE</h5>
+      	
+      	<form method="post" action="PHP/accesoBueno.php">
+      		<div class="ui-field-contain">
+		        <label for="fullname">E-mail</label>
+		        <input type="text" name="email" id="email">
+		        <span class="icon icon-warning" id="errorPass"></span> 
+
+		        <label for="bday">Contraseña</label>
+		        <input type="password" name="password" id="password">
+		        <span class="icon icon-warning" id="errorPass"></span>
+
+		        <label for="bday">Repetir Contraseña</label>
+		        <input type="password" name="password" id="password">
+		        <span class="icon icon-warning" id="errorPass"></span>
+
+		        <label for="bday">Nombre</label>
+		        <input type="text" name="nombre" id="nombre">
+		        <span class="icon icon-warning" id="errorPass"></span>
+
+		        <label for="bday">Apellidos</label>
+		        <input type="text" name="apellidos" id="apellidos">
+		        <span class="icon icon-warning" id="errorPass"></span>
+
+		        <label for="bday">DNI</label>
+		        <input type="text" name="dni" id="dni">
+		        <span class="icon icon-warning" id="errorPass"></span>
+
+		        <fieldset data-role="controlgroup">
+      			<legend>Sexo</legend>
+        			<label for="male">Male</label>
+        			<input type="radio" name="gender" id="male" value="male">
+        			<label for="female">Female</label>
+        			<input type="radio" name="gender" id="female" value="female">
+      			</fieldset>
+       		 	<input type="submit" data-inline="true" value="Submit">
+
+       		 	<label for="bday">Dirección</label>
+		        <input type="text" name="direccion" id="direccion">
+		        <span class="icon icon-warning" id="errorPass"></span>
+
+		        <label for="bday">Localidad</label>
+		        <input type="text" name="localidad" id="localidad">
+		        <span class="icon icon-warning" id="errorPass"></span>
+
+		        <label for="bday">Código Postal</label>
+		        <input type="text" name="cp" id="cp">
+		        <span class="icon icon-warning" id="errorPass"></span>
+
+		        <label for="bday">Provincia</label>
+		        <input type="text" name="provincia" id="provincia">
+		        <span class="icon icon-warning" id="errorPass"></span>
+
+		        <label for="bday">Teléfono</label>
+		        <input type="text" name="telefono" id="telefono">
+		        <span class="icon icon-warning" id="errorPass"></span>
+
+				<label class="texto">He leido y acepto la política de privacidad</label>
+		        <input type="checkbox" id="recordarUsuario" class="inputRegistro" name="remember" value="recordarUsuario"/>
+		    	<span class="icon icon-warning" id="errorPrivacidad"></span>
+				
+		        
+      		</div>
+      		
+      		<input type="submit" data-inline="true" value="Submit">
+    	</form>
+    </div>
+    
+  </div>
+</div>
+
+</body>
+</html>
+
+   

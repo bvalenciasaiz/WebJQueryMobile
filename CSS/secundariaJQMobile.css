@@ -1,0 +1,200 @@
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+* {
+  box-sizing: 100%;
+  font-family: 'Dosis', sans-serif; 
+  font-size: 19px;
+  text-decoration: none;
+  color: black;
+}
+
+
+figure { 
+  margin: 0; 
+}
+
+div#galeria2 { 
+  width: 80%; 
+  margin-left: 10%; 
+  margin-top: 5%;
+  overflow: hidden; 
+}
+
+figure.slider2 { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 10s slidy infinite; 
+}
+
+figure.slider2 figure { 
+  width: 20%; 
+  height: auto;
+  display: inline-block;  position: inherit; 
+}
+
+figure.slider2 img {
+  width: 100%; height: auto; 
+}
+
+
+/*Parte de imagen y características */
+#abrigo{
+  position: absolute;
+  top: -25em;
+  left:25.875em;
+
+}
+
+#abrigo .listado li{
+  float: left;
+ padding: 0.5em;
+}
+
+.detalle{
+  position: absolute;
+  left:21.875em; 
+  top: 11em;
+}
+
+
+/*posiciono*/
+#caracteristicas{
+  position: relative;
+  margin-left: 10%;
+}
+.preferencia{
+   position: relative;
+   margin-left: 25%;
+}
+
+.iten{
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.8em;
+}
+
+.ref{
+  font-family: 'Dosis', sans-serif;
+  font-size: 0.925em;
+  margin-top: 0.3125em;
+}
+
+.precio{
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 0.525em;
+}
+
+.seleccioncolor{
+  font-size: 0.9875em;
+  font-family: 'Dosis', sans-serif;
+  
+  
+}
+.cuadrocolor1{
+  height: 1.1875em;
+  width: 1.375em;
+  background: #1E90FF;
+  float: left;
+  margin-top: 0.2em;
+  margin-left: 10%;
+ 
+}
+.cuadrocolor2{
+  height: 1.1875em;
+  width: 1.375em;
+  background: #A0522D;
+  margin-top: 0.2em;
+  margin-left: 30%;
+     
+}
+
+.tallasdisponibles{
+  position: absolute;
+  margin-top: 1em;
+  font-size: 0.9875em;
+    font-family: 'Dosis', sans-serif;
+  float: left;
+
+ 
+}
+
+.tallaS{
+  height: 1em;
+  width: 1em;
+  background: #D3D3D3;
+  padding: 0.625em;
+  text-align: center;
+  font-size: 1em;
+  font-family: "arial";
+  position: absolute;
+    margin-left: 0em;
+    margin-top: 3em;
+
+}
+  
+.tallaM{
+  height: 1em;
+  width: 1em;
+  background: #D3D3D3;
+  padding: 0.625em;
+  text-align: center;
+  font-size: 1em;
+  font-family: "arial";
+  position: absolute;
+  margin-left:3em;
+ margin-top: 3em;
+}
+
+.tallaL{
+  height: 1em;
+  width: 1em;
+  background: #D3D3D3;
+  padding: 0.625em;
+  text-align: center;
+  font-size: 1em;
+  font-family: "arial";
+  float: left;
+  position: absolute;
+  margin-left: 6em;
+ margin-top: 3em;
+ 
+}
+
+a.añadir{
+  text-decoration: none;
+  color: white;
+}
+.cesta{
+  height: 0.9375em;
+  width: 10.625em;
+  background: #000000;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  font-family: "arial";
+  margin-top: 9em;
+  margin-left: -8%;
+ 
+  transition: 1.5s ease;
+    -moz-transition: 1.5s ease; 
+    -webkit-transition: 1.5s ease; 
+    -o-transition: 1.5s ease; 
+}
+
+.cesta:hover{
+    transform : scale(1.2);
+    -moz-transform : scale(1.2); 
+    -webkit-transform : scale(1.2); 
+    -o-transform : scale(1.2); 
+    -ms-transform : scale(1.2);
+  }

@@ -1,0 +1,251 @@
+*{
+
+	padding: 0em;
+	margin: 0em;
+	list-style: none;
+	color: black;
+	font-family: tahoma;
+}
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+	color: grey;
+}
+
+input {
+  text-decoration: none;
+  background: none;
+  border: none;
+  border-style: none;
+  border-width: 0px;
+  outline: none;
+  background-color: #eceded;
+
+ } 
+
+
+/* id no creado en html y que mediate javascript se genera y se muestra según se indica en css*/
+#velo {
+	position: fixed;
+	left: 0em;
+	top: 0em;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,1);
+	opacity: 0.4; 
+	z-index: 600;
+}
+
+#mensajeError{
+	position: absolute;
+	background-color: #ec7d83;
+	top:-2.5em;
+	right: -1.5em;
+	width: 11em;
+	font-size: 8px;
+	text-align: center;
+	height: 1.5em;
+	color: white;
+}
+
+
+/*class creada en html que contiene los campos del formulario y se pone a display none, 
+según interáctua el usuario se muestra o no*/
+/*por qué si form esta contenido dentro de dicho panel, al hacerlo más pequeño se siguen viendo 
+los campos del formulario*/
+#loginUsuario {
+	position: fixed;
+	right: 3em;
+	top: 3em;
+	width: 90%;
+	height: 25%;
+	background-color: white;
+	z-index: 1000;
+	display: none;
+}
+
+h5{
+	position: absolute;
+	top: 0.5em;
+	left: 1em;
+
+}
+
+#loginUsuario a{
+	position: absolute;
+	right: 1em;
+	top: 0.5em;
+	font-size: 1.2em;
+	
+}
+
+.formularioAcceso {
+	position: absolute;
+	width: 90%;
+	margin-top: 0.8em;
+	left: 1em;
+}
+
+
+/*como hacer que mueva todas las etiquetas al mismo paso sin posicionar todas en el mismo top*/
+.formularioAcceso label, .columUna label, .columDos label {
+	font-family: tahoma;
+	cursor: pointer;
+	color: grey;
+	font-size: 0.5em;
+	top:10em;
+
+}
+
+/*por qué no accede?, lo he intentado tb con .formularioAcceso label y con label .noRegistrado*/
+label.noRegistrado {
+	position: relative;
+	top:0.8em;
+	cursor: none;
+
+}
+ 
+/*como hacer que mueva todos los input al mismo paso sin posicionar todas en el mismo top*/
+input.boton{
+	
+	border: none;
+	width: 100%;
+	/*por qué el margin no lo coge y el padding si??*/
+}
+
+.formularioAcceso input.inputRegistro{
+	border: none;
+	position: relative;
+	width: 100%;
+	/*height: 1em;*/
+	font-size: 0.5em;
+	/*margin-top: 0.2em;
+	margin-bottom: 0.5em;*/
+}
+
+input#recordarUsuario{
+	position: fixed;
+	left: 20%;
+	top: 13em;
+	width: 10%;
+	height: 2.5%;
+}
+.formularioAcceso label.texto{
+	position: relative;
+	float: right;
+	right: 52%;
+	border: none;
+}
+
+.formularioAcceso span {
+	position: relative;
+	display: none;
+	color: red;
+	float: right;
+	top: -1em;
+	right: 0.3em;
+}
+
+#contenedorRegistroUsuario {
+	position: fixed;
+	right: 3em;
+	top: 4em;
+	width: 80%;
+	height: 75%;
+	background-color: white;
+	z-index: 1000;
+	display: none;
+}
+
+div.columUna {
+	position: absolute;
+	right: 50%;
+	top:2em;
+	width: 45%;
+	height: 100%;
+	z-index: 1000;
+}
+
+div.columDos {
+	position: absolute;
+	top: 2em;
+	right: 3%;
+	width: 45%;
+	height: 100%;
+	z-index: 1000;
+}
+
+div.columUna .imagenMujer{
+	position: relative;
+	top: 1em;
+	left: 0.5em;
+	width: 90%;
+	height: 90%;	
+}
+
+#datosUsuario a{
+	position: absolute;
+	right: 1.2em;
+	top: 0.5em;
+	font-size: 1.2em;
+}
+
+
+div.columUna input, div.columDos input{
+	border: none;
+	width: 100%;
+	height: 1.5em;
+	font-size: 1em;
+ }
+
+ div.columDos input.sexo {
+	position: relative;
+	float: left;
+	top: 0.2em;
+	left: -2.5em;
+	border: none;
+	width: 95%;
+	height: 1em;
+}
+
+label.etiqueta{
+	position: relative;
+	float: left;
+	cursor: initial;
+	left: 20%;
+	top: -1em;
+}
+
+.columDos input#politicaPrivacidad{
+	position: fixed;
+	left: 44%;
+	top: 45em;
+	width: 8%;
+	height: 2.5%;
+}
+.columDos label.texto{
+	position: relative;
+	float: right;
+	right:-12%;
+	top: 0.5em;
+	border: none;
+}
+
+.columUna span, .columDos span {
+	position: relative;
+	display: none;
+	color: red;
+	float: right;
+	font-size: 1.3em;
+	top: -1.2em;
+	right: 0.3em;
+}
+
+.columDos input.boton {
+	cursor:pointer;
+	background-color: black;
+	color:white;
+	border: none;
+	width: 100%;
+}
